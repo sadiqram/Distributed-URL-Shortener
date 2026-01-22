@@ -1,0 +1,11 @@
+global:
+  scrape_interval: 5s
+
+scrape_configs:
+  - job_name: "api_shortener"
+    static_configs:
+      - targets: ["api_shortener:4000"]
+
+  - job_name: "api_redirect"
+    static_configs:
+      - targets: ["api_redirect:4000"]
